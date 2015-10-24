@@ -24,21 +24,25 @@ ul#flex-container {
 		- wrap: elements will move to next below when view port gets too small
 		- wrap-reverse: wrapped elments will show up above instead, when space runs out
 	*/
-	justify-content: space-around;
+
+	height: 300px;
+	align-items: baseline;
 	/*
-		Other values:
-		- flex-end: aligns everything to the right;
-		- flex-start: is default, align left
-		- flex-center
-		- space-between
-		- space-around
+		Since the items have a height of 300px, the items can be vertically aligned
+
+		Values:
+		- flex-start: align vertical top
+		- flex-end: align vertical bottom
+		- center: align vertical center
+		- stretch: stretch to height of (in this case) 300px 
+		- baseline: stops when content of elements stops
 	*/
+
 }
 
 ul li {
 	width: 100px;
 
-	height: 150px;
 	padding-top: 45px;
 	color: #fff;
 	font-weight: bold;
