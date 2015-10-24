@@ -8,12 +8,22 @@ ul#flex-container {
 	display: flex; /* create the flexbox container */
 
 
-	flex-direction: row;
+	flex-direction: row ;
 	/* Other flex direction values:
 		- row: default;
 		- row-reverse: display child elements in reverse order;
 		- column: display vertically across screen;
 		- column: display vertically across screen in reserve order;
+	*/
+	flex-wrap: wrap;
+	/* Ensures elements to be wrapped on single line or not. Wrapping of single element
+		is based on the width property of specific element. 
+
+		Other values:
+		- no-wrap: default behavior, elements never get put on line below when
+			view port gets too small
+		- wrap: elements will move to next below when view port gets too small
+		- wrap-reverse: wrapped elments will show up above instead, when space runs out
 	*/
 }
 
@@ -23,6 +33,9 @@ ul li {
 					It takes all childs elements and give all a ration of 1 towards each other,
 					so that they all will end up with the same width.
 				  */
+
+	width: 100px;
+
 
 	height: 150px;
 	padding-top: 45px;
@@ -34,7 +47,7 @@ ul li {
 
 ul li:first-child { background: #c2d775; }
 ul li:nth-child(2) { background: #007278; }
-ul li:nth-child(3) { background: #c7b600; flex-grow:2; } /* gives this specific element more width */
+ul li:nth-child(3) { background: #c7b600; } /* gives this specific element more width */
 ul li:nth-child(4) { background: #a90077; }
 ul li:nth-child(5) { background: #00a378; flex-grow:5; } /* also more width for this one */
 ul li:last-child { background: #00ea72; }
