@@ -26,7 +26,7 @@ ul#flex-container {
 	*/
 
 	height: 300px;
-	align-items: baseline;
+	align-items: stretch;
 	/*
 		Since the items have a height of 300px, the items can be vertically aligned
 
@@ -37,7 +37,6 @@ ul#flex-container {
 		- stretch: stretch to height of (in this case) 300px 
 		- baseline: stops when content of elements stops
 	*/
-
 }
 
 ul li {
@@ -52,7 +51,7 @@ ul li {
 
 ul li:first-child { background: #c2d775; }
 ul li:nth-child(2) { background: #007278; }
-ul li:nth-child(3) { background: #c7b600; }
+ul li:nth-child(3) { background: #c7b600; align-self: flex-end;} /* override align-items for this specifc item*/
 ul li:nth-child(4) { background: #a90077; }
 ul li:nth-child(5) { background: #00a378;}
 ul li:last-child { background: #00ea72; }
