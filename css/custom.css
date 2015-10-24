@@ -6,6 +6,15 @@ ul#flex-container {
 	list-style-type: none; /* remove default bullet points */
 	margin: 0; padding: 0; /* remove default margin and padding */
 	display: flex; /* create the flexbox container */
+
+
+	flex-direction: row;
+	/* Other flex direction values:
+		- row: default;
+		- row-reverse: display child elements in reverse order;
+		- column: display vertically across screen;
+		- column: display vertically across screen in reserve order;
+	*/
 }
 
 ul li {
